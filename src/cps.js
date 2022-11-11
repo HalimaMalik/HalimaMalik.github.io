@@ -1,9 +1,9 @@
 import React from "react";
  
-export default function cps(){
+export default function Cps(){
     return (
         <div>
-          <h2>HELLO</h2>
+          <h2>Home page</h2>
           <p>Cras facilisis urna ornare ex volutpat, et
           convallis erat elementum. Ut aliquam, ipsum vitae
           gravida suscipit, metus dui bibendum est, eget rhoncus nibh
@@ -15,4 +15,5 @@ export default function cps(){
         </div>
       );
 }
+
     
