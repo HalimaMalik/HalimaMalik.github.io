@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./slu-logo.png";
+import logo from "./images/slu-logo.png";
 import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 
 import Cps  from "./cps";
