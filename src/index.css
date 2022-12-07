@@ -12,12 +12,7 @@ body {
   width:auto;
   height:60px;
 }
-.people{
-  padding:5px 0px 0px 25px;
-  width:150px;
-  height:150px;
-  border-bottom: 2px solid #ddd;
-}
+
 .header-container p{
   padding-left: 20px;
   color:#003DA5;
@@ -44,12 +39,11 @@ ul.navbar li a {
 .flexcontainer{
   display: flex;
   flex-direction: row;
-  /* border: 2px solid blue; */
 }
 .flexcontainer section {
   width: 60%;
-  /* border: 2px solid red; */
   font-family: sans-serif;
+  padding: 0px 10px 0px 10px;
 }
 .flexcontainer p{
   font-size:17px;
@@ -66,7 +60,18 @@ ul.navbar li a {
 }
 .flexcontainer aside{
   width: 40%;
-  /* border:2px solid yellow; */
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 20px 0px 20px;
 }
+.people{
+  width:150px;
+  height:150px;
+}
+td{
+  text-align: center;
+  padding: 8px; 
+}
+.tabletitle{
+  width: 100%;
+}
+
+
