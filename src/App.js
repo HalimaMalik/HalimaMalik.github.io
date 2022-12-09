@@ -2,8 +2,9 @@ import React from "react";
 import logo from "./images/slu-logo.png";
 import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
+// import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import {Tooltip} from "@mui/material";
 
 import Cps  from "./cps";
 import Projects from "./projects";
@@ -28,6 +29,7 @@ export default function App() {
       </ul>
       <div className = "right-menu">
       <NavLink to="/login">
+      <Tooltip title="login">
           <IconButton
             size="large"
             color="info"
@@ -36,14 +38,8 @@ export default function App() {
           >
             <AccountCircleIcon />
           </IconButton>
+          </Tooltip>
         </NavLink>
-          {/* <IconButton
-            size="large"
-            color="info"
-            aria-label="account"
-          >
-            <SearchIcon />
-          </IconButton>   */}
      
       </div>
       </div> 
