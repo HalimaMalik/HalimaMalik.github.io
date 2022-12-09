@@ -1,40 +1,67 @@
+*{
+  box-sizing: border-box;
+}
 body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 .content{
-  padding-left: 100px;
-  padding-right: 50px;
+  padding: 0px 50px 0px 100px;
 }
 .logo{
   padding:5px 0px 0px 25px;
   width:auto;
   height:60px;
 }
-
 .header-container p{
   padding-left: 20px;
   color:#003DA5;
   font-size: 13px;
+}
+.navigation{
+  width:100%;
+  height:55px;
+  display: flex;
+  flex-direction: row;
+  background-color:#003DA5;
+  justify-content: center;
 }
 ul.navbar li {
   display: inline;
   list-style-type: none;
 }
 ul.navbar {
-  background-color:#003DA5;
   padding: 0px;
-  width:100%;
+  width:70%;
+  justify-content: space-between;
 }
 ul.navbar li a {
   color: #FFF;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  padding: 18px;
+  padding: 0px 20px 0px 20px; 
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
+}
+
+ul.navbar li a:hover {
+  color: #ddd;
+}
+.right-menu{
+  width:30%;
+  /* padding-top: 20px; */
+  align-content:right;
+  border: 2px solid red;
+
+}
+.menu-line{
+  width:20px;
+  height:3px;
+  background-color: white;
+  margin-bottom: 4px;
+  border: 2px solid blue;
 }
 .flexcontainer{
   display: flex;
@@ -72,6 +99,34 @@ td{
 }
 .tabletitle{
   width: 100%;
+}
+@media (min-width:360px) and (max-width: 480px) {
+.content{
+  padding: 0px;
+}
+/* .navigation{ */
+  /* width:100%;
+  
+} */
+.flexcontainer {
+  display: flex;
+  flex-direction:column;
+}
+.flexcontainer section {
+  width: 100%;
+}
+.flexcontainer aside{
+  width: 100%;
+}
+.tabletitle{
+    table-layout: fixed;
+    width: 100%;   
+}
+td {
+  word-wrap: break-word;
+  min-width: 50px;
+}
+
 }
 
 
